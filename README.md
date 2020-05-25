@@ -4,7 +4,7 @@
 
 ## Development
 ```sh
-$ brew install hugo
+# brew install hugo
 
 $ hugo server
 ```
