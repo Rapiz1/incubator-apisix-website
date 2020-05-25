@@ -28,6 +28,4 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Build the site
-      run: |
-        hugo
-        chmod +x publish.sh && ./publish.sh
+      run: hugo
