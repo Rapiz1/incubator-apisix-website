@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+	<meta name="generator" content="Hugo 0.58.3" />
+    
+
+<meta property="og:title" content="Apache APISIX" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://apisix.incubator.apache.org/" />
+
+<meta property="og:updated_time" content="2020-03-29T11:46:04+08:00" />
+
+
+<meta name="description" content="Hardcoded description; the author should update :)" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Apache APISIX</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.min.0716df82c59b46eb0b19ff92fab552fc16c047bf08587a79e580f97e70330158.css" integrity="sha256-BxbfgsWbRusLGf&#43;S&#43;rVS/BbAR78IWHp55YD5fnAzAVg=">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+  </head>
+  <body>
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+
+    
+    
+    <section class="hero is-fullheight is-default is-bold">
+  
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/apache_logo.png">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="/" class="navbar-item is-secondary">
+            Home
+          </a>
+          <a href="https://github.com/apache/incubator-apisix/tree/master/doc" class="navbar-item is-secondary">
+            Documentation
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Get Involved
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/contribute/subscribe" class="navbar-item">
+                Subscribe Guide
+              </a>
+              <a href="/contribute/contributor" class="navbar-item">
+                Contributor Guide
+              </a>
+              <a href="/contribute/committer" class="navbar-item">
+                Committer Guide
+              </a>
+              <a href="/contribute/release" class="navbar-item">
+                Release Guide
+              </a>
+              <a href="/contribute/security" class="navbar-item">
+                Security
+              </a>
+              <a href="/contribute/2fa" class="navbar-item">
+                2FA
+              </a>
+            </div>
+          </div>
+          <a href="/team" class="navbar-item is-secondary">
+            Team
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              ASF
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://www.apache.org/" class="navbar-item">
+                Foundation
+              </a>
+              <a href="https://www.apache.org/licenses/" class="navbar-item">
+                License
+              </a>
+              <a href="https://www.apache.org/events/current-event" class="navbar-item">
+                Events
+              </a>
+              <a href="https://www.apache.org/security/" class="navbar-item">
+                Security
+              </a>
+              <a href="https://www.apache.org/foundation/sponsorship.html" class="navbar-item">
+                SponsorShip
+              </a>
+              <a href="https://www.apache.org/foundation/thanks.html" class="navbar-item">
+                Thanks
+              </a>
+            </div>
+          </div>
+          <a href="/downloads" class="navbar-item is-secondary">
+            Downloads
+          </a>
+          <a class="language-switcher" href="/zh">中</a>
+        </div>
+      </div>
+  </div>
+</nav>
+
+  
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/apache_logo.png" alt="" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="/" class="navbar-item is-secondary">
+          Home
+        </a>
+        <a href="https://github.com/apache/incubator-apisix/tree/master/doc" class="navbar-item is-secondary">
+          Documentation
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Get Involved
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/contribute/subscribe" class="navbar-item">
+              Subscribe Guide
+            </a>
+            <a href="/contribute/contributor" class="navbar-item">
+              Contributor Guide
+            </a>
+            <a href="/contribute/committer" class="navbar-item">
+              Committer Guide
+            </a>
+            <a href="/contribute/release" class="navbar-item">
+              Release Guide
+            </a>
+            <a href="/contribute/security" class="navbar-item">
+              Security
+            </a>
+            <a href="/contribute/2fa" class="navbar-item">
+              2FA
+            </a>
+          </div>
+        </div>
+        <a href="/team" class="navbar-item is-secondary">
+          Team
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            ASF
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://www.apache.org/" class="navbar-item">
+              Foundation
+            </a>
+            <a href="https://www.apache.org/licenses/" class="navbar-item">
+              License
+            </a>
+            <a href="https://www.apache.org/events/current-event" class="navbar-item">
+              Events
+            </a>
+            <a href="https://www.apache.org/security/" class="navbar-item">
+              Security
+            </a>
+            <a href="https://www.apache.org/foundation/sponsorship.html" class="navbar-item">
+              SponsorShip
+            </a>
+            <a href="https://www.apache.org/foundation/thanks.html" class="navbar-item">
+              Thanks
+            </a>
+          </div>
+        </div>
+        <a href="/downloads" class="navbar-item is-secondary">
+          Downloads
+        </a>
+        <a class="language-switcher" href="/zh">中</a>
+      </div>
+    </div>
+</div>
+</nav>
+
+  
+<div class="hero-body">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column is-12 landing-caption">
+        <h1 class="title is-1 is-bold is-spaced">
+          Apache APISIX
+        </h1>
+
+        
+        <h2 class="subtitle is-4 is-muted">
+          Cloud-native microservices API gateway, delivering the ultimate performance, security, open source and scalable platform for all your APIs and microservices.
+        </h2>
+        
+
+        
+        <h2 class="subtitle is-4 is-muted">
+          Apache APISIX is based on Nginx and etcd. Compared with traditional API gateways, APISIX has dynamic routing and plug-in hot loading, which is especially suitable for API management under micro-service system.
+        </h2>
+        
+
+        
+        <h2 class="subtitle is-4 is-muted">
+          Apache releases are beginning from version 0.9.
+        </h2>
+        
+
+        <p class="btns">
+          <a class="button cta rounded primary-btn raised" href="https://github.com/apache/incubator-apisix">
+            View on GitHub
+          </a>
+          <a class="button cta rounded primary-btn raised" href="./downloads">
+            Downloads
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+    
+
+    
+    
+<section class="section section-feature-grey is-medium">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">Why Apache APISIX？</h2>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns">
+        <div class="column is-one-quarter">
+          <div class="feature-card has-text-centered delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>High availability, safety first</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/mouse-globe.svg">
+            </div>
+            <div class="card-text">
+                <p>Built-in high-availability solution and multiple security plug-ins for identity authentication and interface verification, putting stability and security first.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="feature-card has-text-centered delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>Built-in Dashboard, powerful development interface</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/laptop-cloud.svg">
+            </div>
+            <div class="card-text">
+                <p>It comes with a simple, easy-to-use built-in Dashboard and a powerful and flexible interface for developers to use.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="feature-card has-text-centered delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>Ultimate performance</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/plug-cloud.svg">
+            </div>
+            <div class="card-text">
+                <p>From routing, json schema, to built-in plug-ins, which are designed and implemented to ultimate performance requirements.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="feature-card has-text-centered delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>Multi-protocol and multi-platform support</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/doc-sync.svg">
+            </div>
+            <div class="card-text">
+                <p>Supports http to gRPC transcoding, supports websocket, gRPC, Dubbo, MQTT proxy, and supports multiple platforms including ARM64.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+    
+
+    
+    
+<footer class="footer footer-gray">
+  <div class="container">
+    <div class="columns">
+        <div class="column is-4">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Disclaimer</h3>
+            </div>
+            <div class="footer-description">
+              Apache APISIX (incubating) is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by Incubator. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.
+            </div>
+            <ul class="link-list">
+            </ul>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Documentation</h3>
+            </div>
+            <div class="footer-description">
+              
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://github.com/apache/incubator-apisix#apisix">
+                  Overview
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/apache/incubator-apisix#quickstart">
+                  Quick start
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/apache/incubator-apisix/blob/master/doc/architecture-design.md">
+                  Developer guide
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div class="column is-4" style="display: flex;align-items: center;">
+        <div class="footer-column">
+          <div class="footer-header"></div>
+          <div class="footer-description" style="text-align: center;">
+            <a href="http://www.apache.org/" target="_blank"><img src="https://www.apache.org/foundation/press/kit/asf_logo_wide_small.png" alt="Apache APISIX" ></a>
+          </div>
+          <ul class="link-list">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="copyright">
+Copyright © 2019-2020 The Apache Software Foundation. Apache APISIX, and its feather logo are trademarks of The Apache Software Foundation.
+    </div>
+  </div>
+</footer>
+
+    
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+    
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  </body>
+</html>
